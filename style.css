@@ -299,6 +299,9 @@ footer {
     align-items: center;
     justify-content: center;
   }
+  .cardBlock{
+    padding: 1rem 10rem; 
+  }
 
 }
 
