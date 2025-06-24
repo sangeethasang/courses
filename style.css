@@ -1,8 +1,4 @@
 /* Default code Starts here */
-
-@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap");
 @import url('https://fonts.cdnfonts.com/css/segoe-ui-4');
 
@@ -24,37 +20,30 @@ body {
   /* background-color: #eff2f7; */
   /* font-family: "Merienda", serif; */
   font-family: "'Segoe UI', sans-serif";
+  background-color: #121212;
   color: #666666;
-  font-size: 1.6rem;
-  /* font-weight: 700; */
+  /* font-size: 1.6rem; */
   line-height: 1.5;
   letter-spacing: 0.1rem;
   /* -webkit-font-smoothing: antialiased; */
   /* font-optical-sizing: auto; */
 }
 
-h1 {
-  font-family: "Merienda", serif;
-  color: #333333;
-  font-size: 6rem;
-  /* font-weight: 800; */
-  line-height: 1;
-}
-
 h2 {
-  font-family:"Segoe UI', sans-serif";
+  font-family: "Segoe UI', sans-serif";
   color: #333333;
-  font-size: 20px;
+  font-size: 2rem;
   /* font-weight: 800; */
   line-height: 1;
 }
 
 button {
-  background-color: var(--primaryColor);
-  color: var(--lightColor);
+  /* background-color: var(--primaryColor); */
+  /* color: var(--lightColor); */
+  /* font-weight: bold; */
   cursor: pointer;
   border: none;
-  font-size: 16px;
+  /* font-size: 1.6rem; */
   /* border-radius: 0.5rem; */
   padding: 1rem 3rem;
   transition: background-color 0.2s ease;
@@ -70,14 +59,16 @@ button:hover {
 
 /* Width and height of the scrollbar */
 ::-webkit-scrollbar {
-  width: 1.5rem; /* Vertical scrollbar */
-  height: 10px; /* Horizontal scrollbar */
+  width: 1.5rem;
+  /* Vertical scrollbar */
+  height: 1rem;
+  /* Horizontal scrollbar */
 }
 
 /* Track (background of the scrollbar) */
 ::-webkit-scrollbar-track {
   background: #e3e4e6;
-  border-radius: 5px;
+  border-radius: 0.5rem;
 }
 
 /* Scrollbar thumb (the draggable part) */
@@ -141,36 +132,15 @@ a {
 /* project standard classes Starts */
 
 .componentSpacing {
-  padding: 3rem 0rem; /* Breathing Space Between Components */
+  padding: 3rem 0rem;
+  /* Breathing Space Between Components */
 }
 
 .screenSize {
-  max-width: 1200px; /* Device Screen Size */
-  margin: auto; /* Left and right Center */
-}
-
-.grid-1 {
-  display: grid;
-  grid-template-columns: 1fr;
-  padding: 0rem 2rem;
-}
-
-.grid-2 {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  padding: 0rem 2rem;
-  /* column-gap: 1rem; */
-  /* row-gap: 1rem; */
-  gap: 1rem;
-}
-
-.grid-3 {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  /* column-gap: 1rem; */
-  /* row-gap: 1rem; */
-  gap: 1rem;
-  padding: 0rem 2rem;
+  max-width: 120rem;
+  /* Device Screen Size */
+  margin: auto;
+  /* Left and right Center */
 }
 
 .grid-4 {
@@ -182,24 +152,15 @@ a {
   padding: 0rem 2rem;
 }
 
-.dflex {
-  display: flex; /* without this wont work */
-  align-items: center; /* top & bottom Alignment */
-  justify-content: center; /* left & right Alignment */
-}
-
 .dflex-col {
   display: flex;
-   flex-direction: column;/* makes top to bottom align */
-  align-items: center; /* Behaves like a justify-content */
-  justify-content: center; /* Behaves like a align-items */
+  flex-direction: column;
+  /* makes top to bottom align */
+  align-items: center;
+  /* Behaves like a justify-content */
+  justify-content: center;
+  /* Behaves like a align-items */
   text-align: start;
-}
-
-.dflex-start {
-  display: flex; /* without this wont work */
-  align-items: center; /* top & bottom Alignment */
-  justify-content: center; /* left & right Alignment */
 }
 
 /* project standard classes Ends */
@@ -210,8 +171,10 @@ a {
 
 header {
   /* background-color: #13c6bd; */
-  width: 100%; /* Full Screensize */
-  height: auto; /* content Height */
+  width: 100%;
+  /* Full Screensize */
+  height: auto;
+  /* content Height */
 }
 
 main {
@@ -253,33 +216,52 @@ footer {
 /* :::PARENT CONTAINER Code Ends here::: */
 
 /* :::HEADER Code Starts hereE::: */
-.cardBox button{
-    font-family: 'Segoe UI', sans-serif;
-    color: #000;
-    background-color: #03DAC6;
-    font-weight: bold;
-    border-radius: 8px;
-    padding: 10px 16px;
+.cardBox button {
+  font-family: 'Segoe UI', sans-serif;
+  color: #000;
+  background-color: #03DAC6;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 0.8rem;
+  padding: 1rem 5rem;
 }
-.cardBox{
-    background-color: #1e1e1e;
-    color: #ffffff;
-    border-radius: 15px;
-    padding:2rem 6rem;
+
+.cardBox img {
+  width: auto;
+  height: 150px;
+  padding: 2rem;
 }
-.cardBox h2{
-    color: #ffffff;
-    margin-bottom: 8px;
+
+.cardBox {
+  background-color: #1f1f1f;
+  color: #ffffff;
+  border-radius: 1.5rem;
+  padding: 1rem 1rem;
+  transition: transform 0.2s ease;
 }
-.cardBox h5{
-    font-size:13px ;
-    color: #bbbbbb;
-    margin-bottom: 12px;
+
+.cardBox:hover {
+  transform: translateY(-10px);
 }
-.cardBox p{
-    font-size: 14px;
-    line-height: 1.5;
-    margin-bottom: 15px;
+
+.cardBox h2 {
+  color: #ffffff;
+  margin-bottom: 0.8rem;
+  text-align: center;
+}
+
+.cardBox h5 {
+  font-size: 1.3rem;
+  color: #bbbbbb;
+  margin-bottom: 1.2rem;
+  text-align: center;
+}
+
+.cardBox p {
+  font-size: 1.4rem;
+  line-height: 1.2;
+  margin-bottom: 1.5rem;
+  text-align: center;
 }
 
 /* :::FOOTER Code Ends here::: */
@@ -291,48 +273,43 @@ footer {
 /* Small devices (landscape phones, upto 576px and below) */
 /* @media (width <=576px) */
 @media (max-width: 576px) {
+
   .grid-1,
   .grid-2,
   .grid-3,
   .grid-4 {
-    grid-template-columns:  1fr ;
+    grid-template-columns: 1fr;
     padding: 0rem 1rem;
   }
 
-  .cardBox h2{
-    font-size: 20px;
+  .cardBox h2 {
+    font-size: 2rem;
   }
-  .cardBox p{
-    font-size: 14px;
+
+  .cardBox p {
+    font-size: 1.4rem;
   }
-  .cardBox h5{
-    font-size: 13px;
+
+  .cardBox h5 {
+    font-size: 1.3rem;
   }
-  .cardBox{
-    padding: 2rem 9rem;
+
+  .cardBlock {
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
-  .cardBox{
-    margin: 2rem 8rem;
-  }
-  
+
 }
 
 /* TABLET RESPONSIVE CODE */
-@media (min-width: 577px) and (max-width: 768px) {
-
-  
-}
+@media (min-width: 577px) and (max-width: 768px) {}
 
 /* @media (min-width: 769px) and (max-width: 992px) */
-@media (min-width:769px) and (max-width: 992px) {
- 
-}
+@media (min-width:769px) and (max-width: 992px) {}
 
 /* @media (min-width: 993px) and (max-width: 1200px) */
-@media (min-width:993px) and (max-width:1200px) {
-
-}
+@media (min-width:993px) and (max-width:1200px) {}
 
 /* @media (min-width: 1200px)  */
-@media (width:1200px) {
-}
+@media (width:1200px) {}
